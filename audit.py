@@ -20,6 +20,27 @@ rs = mass / LAMBDA
 gravity = (G * mass) / (radius**2)
 c_eff = math.sqrt(1 - (rs / radius)) * 100
 
+# ... existing constants and inputs ...
+
+# 4. The Logic
+rs = mass / LAMBDA 
+gravity = (G * mass) / (radius**2)
+
+# The Linear Deficit (L)
+# This represents the 'velocity cost' at the given radius
+linear_deficit = (gravity * radius) / C
+
+# 5. The Browser Output
+st.divider()
+st.header(f"Results for {name}")
+
+col1, col2, col3 = st.columns(3) # Expanded to 3 columns
+col1.metric("Exhaustion Coordinate ($R_s$)", f"{rs:.2f} m")
+col2.metric("Surface Gravity ($g$)", f"{gravity:.4f} m/s²")
+col3.metric("Linear Deficit ($L$)", f"{linear_deficit:.6f} m/s")
+
+st.write(r"The **Linear Deficit** represents the local reduction in the velocity of length/time ($c$) due to mass-magnitude.")
+
 # 5. The Browser Output
 st.divider()
 st.header(f"Results for {name}")
