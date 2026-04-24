@@ -1,0 +1,8 @@
+# Exclude everything by default
+*
+
+# But ALLOW these specific files
+!audit.py
+!requirements.txt
+!.gitignore
+!*.py
