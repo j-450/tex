@@ -18,11 +18,12 @@ radius = st.number_input("Radius (m)", value=69911000)
 # 4. The Logic
 rs = mass / LAMBDA 
 gravity = (G * mass) / (radius**2)
+c_eff = math.sqrt(1 - (rs / radius)) * 100
 
 # 5. The Browser Output
 st.divider()
 st.header(f"Results for {name}")
-
+st.metric("Local c Efficiency", f"{c_eff:.8f} %")
 col1, col2 = st.columns(2)
 col1.metric("Exhaustion Coordinate ($R_s$)", f"{rs:.2f} m")
 col2.metric("Surface Gravity ($g$)", f"{gravity:.4f} m/s²")
