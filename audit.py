@@ -29,10 +29,11 @@ linear_deficit = (gravity * radius) / C
 st.divider()
 st.header(f"Results for {name}")
 
-col1, col2, col3 = st.columns(4) # Expanded to 3 columns
+col1, col2, col3 = st.columns(3) # Expanded to 3 columns
 col1.metric("Exhaustion Coordinate ($R_s$)", f"{rs:.2f} m")
 col2.metric("Surface Gravity ($g$)", f"{gravity:.4f} m/s²")
 col3.metric("Linear Deficit ($L$)", f"{linear_deficit:.6f} m/s")
+
 st.metric("Local c Efficiency", f"{c_eff:.8f} %")
 
 
