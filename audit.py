@@ -7,8 +7,8 @@ C = 299792458
 LAMBDA = (C**2) / (2 * G) 
 
 # 2. The UI Header
-st.title(r"Gravitational Audit Tool")
-st.write(r"This tool identifies the coordinate of linear exhaustion ($R_s$) based on mass.")
+st.title(r"Triadic Gravitational Tool")
+st.write(r"This tool identifies the linear deficit from $c$ imposed by ($\lambda$) based on mass and radius.")
 
 # 3. Interactive Inputs (The Sliders!)
 name = st.text_input("Body Name", "Jupiter")
