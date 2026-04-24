@@ -1,6 +1,24 @@
 import streamlit as st
 import math
 
+st.markdown("""
+    <style>
+    /* Hide the top header bar and the GitHub icon */
+    header[data-testid="stHeader"] {
+        display: none !important;
+    }
+
+    /* Hide the 'hamburger' menu and footer */
+    #MainMenu {visibility: hidden;}
+    footer {visibility: hidden;}
+    
+    /* Ensure the content sits at the very top of the page now that header is gone */
+    .block-container {
+        padding-top: 2rem !important;
+    }
+    </style>
+    """, unsafe_allow_html=True)
+
 # 1. The Constants
 G = 6.67430e-11
 C = 299792458
