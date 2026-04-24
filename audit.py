@@ -8,7 +8,7 @@ LAMBDA = (C**2) / (2 * G)
 
 # 2. The UI Header
 st.title(r"Triadic Gravitational Tool")
-st.write(r"This tool identifies the linear deficit from $c$ imposed by the local linear density ($\lambda$), based on a body's mass and radius.")
+st.write(r"This tool identifies the deficit from $c$ imposed by the local linear density ($\lambda$), based on a body's mass and radius.")
 
 # 3. Interactive Inputs (The Sliders!)
 name = st.text_input("Body Name", "Jupiter")
@@ -43,7 +43,7 @@ st.write(rf"""
 At a radius of **{radius/1000:,.1f} km**, the velocity of length/time ($c$) is partially 'choked' 
 by the linear density, manifesting as the gravitational potential $g$. 
 
-However, the radius of **{rs:.2f} meters** represents the Schwarzschild radius: where the linear density $\lambda$ would be fully realised. At this linear density, 
+The radius of **{rs:.2f} meters** represents the Schwarzschild radius: where the linear density $\lambda$ would become fully realised. At this linear density, 
 $c$ is extinguished entirely, marking a total spatial exclusion where the 
-volumetric manifold (Length/Time) can no longer be expressed.
+volumetric manifold (Length/Time) can no longer be fulfilled.
 """)
