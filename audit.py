@@ -43,7 +43,7 @@ st.write(rf"""
 At a radius of **{radius/1000:,.1f} km**, the velocity of length/time ($c$) is partially 'choked' 
 by the linear density, manifesting as the gravitational potential $g$. 
 
-The radius of **{rs:.2f} meters** represents the Schwarzschild radius: where the linear density $\lambda$ would become fully realised. At this linear density, 
-$c$ is extinguished entirely, marking a total spatial exclusion where the 
+The radius of **{rs:.2f} meters** represents the Schwarzschild radius: where the linear density $\lambda$ would become fully realised if the body's radius was reduced to this compression. At that linear density, 
+$c$ would be extinguished entirely, marking a total spatial exclusion where the 
 volumetric manifold (Length/Time) can no longer be fulfilled.
 """)
